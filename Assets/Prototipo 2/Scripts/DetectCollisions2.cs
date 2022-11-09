@@ -9,9 +9,7 @@ public class DetectCollisions2 : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             Destroy(gameObject);
-            Destroy(other.gameObject);
-            PlayerController2.score++;
-            Debug.Log("Score: " + PlayerController2.score);
+            other.gameObject.GetComponent<AnimalHunger2>().FeedAnimal(1);
         }
     }
 }

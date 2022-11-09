@@ -9,11 +9,18 @@ public class PlayerController2 : MonoBehaviour
     [SerializeField] private float speed = 5;
     [SerializeField] private float leftBound = -10;
     [SerializeField] private float rightBound = 10;
+    [SerializeField] private int life = 3;
     private float horizontalInput;
     private float verticalInput;
 
     public static int score;
-    
+    private int currentLife;
+
+    private void Start()
+    {
+        currentLife = life;
+    }
+
     void Update()
     {
         // Movimiento con bordes
@@ -41,9 +48,15 @@ public class PlayerController2 : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            score = 0;
+            currentLife--;
             Destroy(other.gameObject);
-            Debug.Log("GAME OVER");
+            Debug.Log("Vidas: " + currentLife);
+            if ( currentLife < 1)
+            {
+                currentLife = life;
+                score = 0;
+                Debug.Log("GAME OVER");
+            }
         }
     }
     
