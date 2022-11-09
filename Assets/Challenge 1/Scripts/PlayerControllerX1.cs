@@ -8,14 +8,7 @@ public class PlayerControllerX1 : MonoBehaviour
     public float rotationSpeed = 45.0f;
     public float verticalInput;
     public GameObject propeller;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
+    
     void Update()
     {
         // get the user's vertical input

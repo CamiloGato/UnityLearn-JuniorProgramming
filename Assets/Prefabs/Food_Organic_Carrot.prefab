@@ -15,8 +15,7 @@ GameObject:
   - component: {fileID: 7706675766792021579}
   - component: {fileID: 450486947446785856}
   - component: {fileID: 4512073602369964063}
-  - component: {fileID: -3104717188846308396}
-  - component: {fileID: -3239727739283592543}
+  - component: {fileID: 2215454776204528411}
   m_Layer: 0
   m_Name: Food_Organic_Carrot
   m_TagString: Untagged
@@ -139,7 +138,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.14170074, y: 0.141707, z: 0.61012447}
   m_Center: {x: 0, y: 0.0708535, z: -0.000000059604645}
---- !u!54 &-3104717188846308396
+--- !u!54 &2215454776204528411
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -155,15 +154,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-3239727739283592543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8274191207161945569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e57e0ed2ae754d40a18c7f7b2351ecb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
