@@ -5,19 +5,19 @@ using UnityEngine;
 
 public class MoveLeft3 : MonoBehaviour
 {
-    private float speed = 20;
     private PlayerController3 playerControllerScript;
-
+    private SpawnManager3 spawnManagerScript;
     private void Start()
     {
         playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController3>();
+        spawnManagerScript = GameObject.Find("SpawnManager").GetComponent<SpawnManager3>();
     }
 
     void Update()
     {
         if (playerControllerScript.gameOver == false)
         {
-            transform.Translate(Vector3.left * (Time.deltaTime * speed));
+            transform.Translate(Vector3.left * (Time.deltaTime * spawnManagerScript.speed));
         }
         if (transform.position.x < -15 && gameObject.CompareTag("Obstacle"))
         {

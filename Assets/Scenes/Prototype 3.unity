@@ -688,7 +688,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f28f1a1d883d1dd48807385287544ece, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstaclePrefab: {fileID: 151096, guid: 367149bd17c4d4d4e8868ec6a5cf8d45, type: 3}
+  speed: 20
+  obstaclePrefabs:
+  - {fileID: 151096, guid: 367149bd17c4d4d4e8868ec6a5cf8d45, type: 3}
+  - {fileID: 5258325244512096613, guid: 6ebe3021640874c4da33fd1df06f2849, type: 3}
   spawnTime: 2
   spawnDelay: 2
 --- !u!1 &1362813799 stripped
@@ -940,7 +943,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8b6e1083dd4dab341b378729886a1c0e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -4.59
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8b6e1083dd4dab341b378729886a1c0e, type: 3}
       propertyPath: m_LocalPosition.y

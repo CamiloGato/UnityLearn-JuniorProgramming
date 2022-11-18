@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class SpawnManager3 : MonoBehaviour
 {
-    [SerializeField] GameObject obstaclePrefab;
-    [SerializeField] float spawnTime = 2f;
-    [SerializeField] float spawnDelay = 2f;
+    public float speed;
+    [SerializeField] private GameObject[] obstaclePrefabs;
+    [SerializeField] private float spawnTime = 2f;
+    [SerializeField] private float spawnDelay = 2f;
     private Vector3 spawnPos = new Vector3(25, 0, 0);
     private PlayerController3 playerControllerScript;
     void Start()
     {
-        InvokeRepeating("SpawnObstacle", spawnTime, spawnDelay);
+        InvokeRepeating(nameof(SpawnObstacle), spawnTime, spawnDelay);
         playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController3>();
     }
     
@@ -19,7 +20,14 @@ public class SpawnManager3 : MonoBehaviour
     {
         if (playerControllerScript.gameOver == false)
         {
-            Instantiate(obstaclePrefab, spawnPos, obstaclePrefab.transform.rotation);
+            int index = Random.Range(0, obstaclePrefabs.Length);
+            Instantiate(obstaclePrefabs[index], spawnPos, obstaclePrefabs[index].transform.rotation);
         }
     }
+    
+    public void ChangeSpeed(float speed)
+    {
+        this.speed = speed;
+    }
+
 }
