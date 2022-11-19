@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 1223018578689987316}
   - component: {fileID: 1213761026688574618}
   - component: {fileID: 4026625542115815423}
-  - component: {fileID: 6122020255159538470}
+  - component: {fileID: 4722928282816762940}
   m_Layer: 0
-  m_Name: Powerup
+  m_Name: Powerup 2
   m_TagString: Powerup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5548096985bd7a9439b5cfbe1cdc0acc, type: 2}
+  - {fileID: 2100000, guid: 5ac0c2ecfb58cf84c833ffc2b98c6b2b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -98,7 +98,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.528658, y: 0.43810678, z: 0.4578313}
   m_Center: {x: 0, y: -0.000000022351742, z: 0}
---- !u!114 &6122020255159538470
+--- !u!114 &4722928282816762940
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -110,4 +110,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a82d111fef8a7814ba341f8f3a257b20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 1
+  id: 2
